@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-pink: #FFC0CB;
+  --color-gray: #D3D3D3;
+  --color-gold: #FFD700;
+  --color-black: #0d0d0d;
+  --color-white: #fdfbfb;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  @apply bg-softWhite text-richBlack font-body antialiased;
+}
+
+.container-section {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.h1 {
+  @apply font-heading text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight;
+}
+.h2 {
+  @apply font-heading text-3xl sm:text-4xl font-semibold tracking-tight;
+}
+.h3 {
+  @apply font-heading text-2xl font-semibold;
+}
+.p {
+  @apply text-base sm:text-lg leading-7 text-black/80;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-royalGold text-black font-semibold px-6 py-3 shadow-goldGlow transition-transform duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-royalGold focus:ring-offset-2;
+}
+
+.nav-link {
+  @apply text-black/80 hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-royalGold rounded;
+}
